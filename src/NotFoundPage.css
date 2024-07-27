@@ -1,0 +1,65 @@
+/* src/NotFoundPage.css */
+.not-found-page {
+    position: relative;
+    background: url('https://images.unsplash.com/photo-1593642532400-2682810df593') no-repeat center center/cover, rgba(0, 0, 0, 0.5); /* Dark overlay with image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .not-found-page h1 {
+    font-size: 100px;
+    margin: 0;
+    line-height: 1;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow for better readability */
+  }
+  
+  .not-found-page p {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Shadow for readability */
+  }
+  
+  .btn-home {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .btn-home:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  .not-found-icon {
+    font-size: 80px;
+    margin-bottom: 20px;
+    color: #ff6f61; /* Playful color for the icon */
+  }
+  
+  footer {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    color: #ccc;
+  }
+  

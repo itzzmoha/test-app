@@ -1,0 +1,136 @@
+.tasks-page {
+  position: relative;
+  background: url('https://i.pinimg.com/originals/7a/c7/1e/7ac71e72373b0fb270b3a6d72e44eea3.gif') no-repeat center center/cover, rgba(128, 128, 128, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 30px;
+  color: transparent; /* Make the text color transparent */
+  -webkit-text-stroke: 2px #ffa857; /* Add a stroke (for WebKit browsers) */
+  animation: fadeInZoom 2s ease-out, moveLeftRight 4s ease-in-out infinite; /* Apply both animations */
+  margin-bottom: 40px;
+}
+
+.btn-return-home {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-return-home:hover {
+  background-color: #2980b9;
+}
+
+.tasks-container {
+  background: rgba(0, 0, 0, 0.4); /* Dark semi-transparent background */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 400px;
+  margin: auto;
+}
+
+.btn-add-task,.btn-cancel,.btn-save{
+  background-color: #2ecc71;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+.btn-add-task:hover,btn-cancel:hover {
+  background-color: #27ae60;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.task-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-edit,
+.btn-delete,.btn-done {
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.btn-edit {
+  background-color: #f39c12;
+}
+.btn-done{
+  background-color: #2980b9;
+}
+.btn-done:hover{
+  background-color: #3498db;
+}
+.btn-edit:hover {
+  background-color: #e67e22;
+}
+
+.btn-delete {
+  background-color: #e74c3c;
+}
+
+.btn-delete:hover {
+  background-color: #c0392b;
+}
+
+footer {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  margin-top: 20px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+input {
+  height: 30px;
+  border-radius: 5px;
+  margin: auto;
+  padding: 0 10px; /* Add padding inside the input */
+  border: 1px solid #ccc; /* Light border */
+  box-sizing: border-box; /* Include padding and border in width and height */
+  margin-left: 10px;
+}

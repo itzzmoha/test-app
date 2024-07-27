@@ -1,0 +1,109 @@
+/* ChatPage.css */
+.chat-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('https://i.pinimg.com/originals/7a/c7/1e/7ac71e72373b0fb270b3a6d72e44eea3.gif') no-repeat center center/cover, rgba(128, 128, 128, 0.2); /* Gray glass effect with image */
+}
+
+.chat-window {
+  width: 60%;
+  height: 80vh;
+  background: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.messages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 20px;
+  display: inline-block;
+  max-width: 60%;
+  position: relative;
+}
+
+.sent {
+  background-color: #dcf8c6;
+  align-self: flex-end;
+}
+
+.received {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  align-self: flex-start;
+}
+
+.sender {
+  font-weight: bold;
+}
+
+.text {
+  display: block;
+  margin: 5px 0;
+}
+
+.timestamp {
+  font-size: 0.8em;
+  color: #666;
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+}
+
+.message-form {
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+}
+
+.username-input {
+  padding: 15px;
+  margin-bottom: 10px;
+  background: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
+  backdrop-filter: blur(10px);
+  color: white;
+  font-size: 20px;
+  border-radius: 4px;
+}
+
+.input-group {
+  display: flex;
+}
+
+.message-input {
+  flex: 1;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
+  backdrop-filter: blur(10px);
+  border-radius: 4px 0 0 4px;
+  color: white;
+  font-size: 15px;
+}
+
+.send-button {
+  padding: 5px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+.send-button:hover {
+  background-color: #0056b3;
+}

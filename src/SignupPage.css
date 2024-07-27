@@ -1,0 +1,108 @@
+/* Define the slide-in animation for the signup block */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.signup-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: url('https://i.pinimg.com/originals/7a/c7/1e/7ac71e72373b0fb270b3a6d72e44eea3.gif') no-repeat center center/cover, rgba(128, 128, 128, 0.2); /* Gray glass effect with image */
+  background-size: cover; /* Ensure the background covers the entire viewport */
+  color: #fff; /* White text color */
+  font-family: 'Arial', sans-serif; /* Use the same font-family */
+}
+
+.signup-block {
+  background: rgba(0, 0, 0, 0.4); /* Dark semi-transparent background */
+  backdrop-filter: blur(10px); /* Glass effect */
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  margin: 20px; /* Margin to prevent content from touching edges */
+  animation: slideIn 0.5s ease-out;
+}
+
+.signup-title {
+  margin-top: 50px;
+  font-size: 35px;
+  font-weight: bold;
+  color: #ffa857; /* Matching color */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.input-field {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: calc(100% - 22px); /* Adjust width to account for padding and border */
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+  color: white;
+}
+
+.signup-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px 0; /* Increase padding for a more substantial button */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%; /* Adjust width to account for padding and border */
+}
+
+.signup-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.gender-selection {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.gender-selection label {
+  font-size: 16px; /* Adjusted font size */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.gender-selection input {
+  margin-right: 5px;
+}
+
+.back-button {
+  background-color: #6c757d; /* Gray background */
+  color: #fff; /* White text */
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  width: 120px;
+  height: 40px;
+  text-align: center; /* Margin for spacing */
+  margin-bottom: 25px;
+}
+
+.back-button:hover {
+  background-color: #5a6268; /* Darker gray on hover */
+}
+ 
